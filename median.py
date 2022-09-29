@@ -5,6 +5,7 @@ while  True:
     try:
         print("Enter a list of numbers separated by commas:")
         numbers = [float(value) for value in input().split(",")]
+        numbers= sorted(numbers)
         while len(numbers) > 2:
             numbers.pop(0)
             numbers.pop()
